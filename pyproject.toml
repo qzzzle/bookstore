@@ -1,0 +1,20 @@
+[project]
+name = "bookstore"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.116.1",
+    "ruff>=0.12.4",
+    "sqlalchemy>=2.0.41",
+    "uvicorn>=0.35.0",
+]
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+tag_format = "$version"
+version_scheme = "pep440"
+version_provider = "uv"
+update_changelog_on_bump = true
+major_version_zero = true
