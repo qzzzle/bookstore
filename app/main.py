@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 
-app = FastAPI()
+from app.api.v1.routes import book
 
-@app.get("/")
-async def root():
-    return {"message": "Welcome to the Bookstore API"}
+app = FastAPI(title="Bookstore API")
+
+app.include_router(book.router)
