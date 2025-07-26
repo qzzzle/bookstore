@@ -12,7 +12,7 @@ class BookRead(BookBase):
     id: int
 
     class Config:
-        from_attributes = True  # allow reading ORM model instances
+        from_attributes = True
 
 class BookUpdate(BaseModel):
     title: str | None = None
