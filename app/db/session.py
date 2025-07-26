@@ -4,7 +4,7 @@ from app.core.config import settings
 
 engine = create_async_engine(
     settings.DATABASE_URL,
-    echo=False,  # You can set this to True to debug SQL queries
+    echo=True,
 )
 
 async_session = async_sessionmaker(
